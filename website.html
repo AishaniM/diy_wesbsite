@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Page</title>
+</head>
+<body>
+    <h1>Welcome to KidsAtWork!</h1>
+    <p>Your personalized page:</p>
+    <p id="subdomain"></p>
+
+    <script>
+        // Get the subdomain from the URI
+        var subdomain = window.location.hostname.split('.')[0];
+
+        // Display the subdomain on the page
+        document.getElementById("subdomain").innerText = "Your subdomain: " + subdomain;
+    </script>
+</body>
+</html>
