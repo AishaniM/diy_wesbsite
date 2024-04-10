@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personalized Page</title>
+    <title>Your Page</title>
 </head>
 <body>
     <h1>Welcome to KidsAtWork!</h1>
@@ -15,5 +15,18 @@
         // Display the subdomain on the page
         document.getElementById("subdomain").innerText = "Your subdomain: " + subdomain;
     </script>
+
+
+
+    <!-- From Tutorials Point website -->
+    <h2>Using the <i>any url's hostname</i> property</h2>
+    <p id="idSampDom"></p>
+    <script>
+    var sampUrl = new URL("https://www.google.com/search?q=google&rlz=1C1CHBF_en-GBAU884AU884&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQkxNDE1MWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8");
+    var varSampDom = document.getElementById("idSampDom");
+    varSampDom.innerHTML = "url hostname " + (sampUrl.hostname);
+    </script>
+    
 </body>
 </html>
+
